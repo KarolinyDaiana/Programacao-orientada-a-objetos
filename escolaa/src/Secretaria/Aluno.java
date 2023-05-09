@@ -10,9 +10,8 @@ public class Aluno {
 	 * @author Karoliny Daiana Cieply
 	 */
 
-	private String nome, endereco, email, responsavel, matricula, cpf;
+	private String nome, endereco, email, responsavel, matricula, cpf, numero;
 	private Date dataNascimento;
-	private int numero;
 
 	/* Procedimento para validar o nome */
 	public void setNome(String pnome) {
@@ -83,5 +82,18 @@ public class Aluno {
 	public String getEmail() {
 		return email;
 	}
-
+	
+	/** Procedimento para validar o número */
+	public void setNumero(String numeroo) {
+		if(numeroo.matches("(\\([0-9]{2}\\)[0-9]{5}[-]+[0-9]{4})")) {
+			numero = numeroo;
+		} else {
+			System.out.println("Número inválido!\n");
+		}
+	}
+	/** Função para retornar o número */
+	public String getNumero() {
+		return numero;
+	}
+	
 }

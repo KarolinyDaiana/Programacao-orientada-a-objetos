@@ -15,6 +15,8 @@ public class Teste {
 		responsavel1.setResponsavel("Mariana0");
 		Aluno email1 = new Aluno();
 		email1.setEmail("karoliny.cieply@redm87i.cocorococom");
+		Aluno numero1 = new Aluno();
+		numero1.setNumero("(558)9999-736372");
 		
 		Aluno aluno2 = new Aluno();
 		aluno2.setNome("Antonio");
@@ -26,18 +28,22 @@ public class Teste {
 		responsavel2.setResponsavel("Joaozinho");
 		Aluno email2 = new Aluno();
 		email2.setEmail("karoliny.cieply@gmail.com");
+		Aluno numero2 = new Aluno();
+		numero2.setNumero("(47)99999-7362");
 		
 		System.out.println("Nome: " + aluno1.getNome());
 		System.out.println("\nCPF: " + cpf1.getCpf());
 		System.out.println("\nMatrícula: " + matricula1.getMatricula());
 		System.out.println("\nResponsável: " + responsavel1.getResponsavel());
 		System.out.println("\nEmail: " + email1.getEmail());
+		System.out.println("\nNúmero: " + numero1.getNumero());
 		
 		System.out.println("\nNome: " + aluno2.getNome());
 		System.out.println("\nCPF: " + cpf2.getCpf());
 		System.out.println("\nMatrícula: " + matricula2.getMatricula());
 		System.out.println("\nResponsável: " + responsavel2.getResponsavel());
 		System.out.println("\nEmail: " + email2.getEmail());
+		System.out.println("\nNúmero: " + numero2.getNumero());
 		
 	}
 
