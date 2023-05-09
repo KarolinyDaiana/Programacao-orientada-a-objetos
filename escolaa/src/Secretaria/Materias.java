@@ -1,9 +1,9 @@
 package Secretaria;
 
-public class Matérias {
+public class Materias {
 	
 private int frequencia;
 private Professor professor;
-private Avaliação avaliacao;
+private Avaliacao avaliacao;
 
 }

@@ -4,6 +4,6 @@ public class Curso {
 
 private String nome;
 private int cargaHoraria;
-private Matérias materias;
+private Materias materias;
 	
 }

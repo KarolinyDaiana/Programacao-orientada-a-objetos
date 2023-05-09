@@ -3,8 +3,10 @@ package Secretaria;
 import java.util.Date;
 
 public class Aluno {
-	
-	/**Classe para representar o aluno
+
+	/**
+	 * Classe para representar o aluno
+	 * 
 	 * @author Karoliny Daiana Cieply
 	 */
 
@@ -20,6 +22,7 @@ public class Aluno {
 			System.out.println("Nome inválido!\n");
 		}
 	}
+
 	/* Função para enviar o nome */
 	public String getNome() {
 		return nome;
@@ -33,6 +36,7 @@ public class Aluno {
 			System.out.println("CPF inválido\n");
 		}
 	}
+
 	/** Função para enviar o cpf */
 	public String getCpf() {
 		return cpf;
@@ -46,22 +50,38 @@ public class Aluno {
 			System.out.println("Matrícula inválida\n");
 		}
 	}
+
 	/** Função para enviar a matrícula */
 	public String getMatricula() {
 		return matricula;
 	}
-	
+
 	/** Procedimento para validar o responsável */
 	public void setResponsavel(String responsavell) {
-		if(responsavell.matches("[A-Za-z]*")) {
+		if (responsavell.matches("[A-Za-z]*")) {
 			responsavel = responsavell;
 		} else {
-			System.out.println("Responsável inválido!");
+			System.out.println("Responsável inválido!\n");
 		}
 	}
+
 	/** Função para rtornar o responsável */
 	public String getResponsavel() {
 		return responsavel;
+	}
+
+	/** Procedimento para validar o email */
+	public void setEmail(String emaill) {
+		if (emaill.matches("([a-z0-9.]+[a-z0-9_\\-.]*@[.a-z]*)")) {
+			email = emaill;
+		} else {
+			System.out.println("Email inválido!\n");
+		}
+	}
+
+	/** Função para retornar o email */
+	public String getEmail() {
+		return email;
 	}
 
 }

@@ -1,6 +1,6 @@
 package Secretaria;
 
-public class Avaliação {
+public class Avaliacao {
 
 private int notas;
 	
