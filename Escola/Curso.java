@@ -4,25 +4,25 @@ import Secretaria.Aluno;
 
 public class Curso {
 
-	private String curso;
+	private String nome;
 	
-	public Curso(String curso) {
+	public Curso(String nome) {
 		super();
-		setCurso(curso);
+		setNome(nome);
 	}
 	
 	/** Porcedimento para validar o nome do curso */
-	public void setCurso(String cursoo) {
+	public void setNomeCurso(String nomee) {
 		if(cursoo.matches("[A-Za-z\\s]*")) {
-			curso = cursoo;
+			nome = nomee;
 		} else {
-			System.out.println("Curso inválido!\n");
+			System.out.println("Curso invï¿½lido!\n");
 		}
 	}
 	
-	/** Função para retornar o nome do curso */
-	public String getCurso() {
-		return curso;
+	/** Funï¿½ï¿½o para retornar o nome do curso */
+	public String getNomeCurso() {
+		return nome;
 	}
 	
 }

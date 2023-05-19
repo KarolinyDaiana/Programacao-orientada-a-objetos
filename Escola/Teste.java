@@ -16,7 +16,7 @@ public class Teste {
 		Curso curso1 = new Curso("Popixn##");
 		
 		/**Aluno 2*/
-		Aluno aluno2 = new Aluno("Joaozinho", "11122233355", "Joaoa tozini" ,"(47)99999-7362", "karoliny.cieply@gmail.com","Antonio");
+		Aluno aluno2 = new Aluno("Joaozinho", "111.222.333-55", "Joaoa tozini" ,"(47)99999-7362", "karoliny.cieply@gmail.com","Antonio");
 		Matricula mat2 = new Matricula("11111", "Programacao", aluno2.getNome());
 		Curso curso2 = new Curso("Programacao de sistemas");
 		
@@ -24,20 +24,20 @@ public class Teste {
 		System.out.println("Nome 1: " + aluno1.getNome());
 		System.out.println("\nCPF 1: " + aluno1.getCpf());
 		System.out.println("\nEndereco 1: " + aluno1.getEndereco());
-		System.out.println("\nNúmero 1: " + aluno1.getNumero());
+		System.out.println("\nNï¿½mero 1: " + aluno1.getNumero());
 		System.out.println("\nEmail 1: " + aluno1.getEmail());
-		System.out.println("\nResponsável 1: " + aluno1.getResponsavel());
-		System.out.println("\nMatrícula 1: " + mat1.getMatricula());
-		System.out.println("\nCurso: " + curso1.getCurso());
+		System.out.println("\nResponsï¿½vel 1: " + aluno1.getResponsavel());
+		System.out.println("\nMatrï¿½cula 1: " + mat1.getMatricula());
+		System.out.println("\nCurso: " + curso1.getNomeCurso());
 		
 		System.out.println("Nome 2: " + aluno2.getNome());
 		System.out.println("\nCPF 2: " + aluno2.getCpf());
 		System.out.println("\nEndereco 2: " + aluno2.getEndereco());
-		System.out.println("\nNúmero 2: " + aluno2.getNumero());
+		System.out.println("\nNï¿½mero 2: " + aluno2.getNumero());
 		System.out.println("\nEmail 2: " + aluno2.getEmail());
-		System.out.println("\nResponsável 2: " + aluno2.getResponsavel());
-		System.out.println("\nMatrícula 2: " + mat2.getMatricula());
-		System.out.println("\nCurso: " + curso1.getCurso());
+		System.out.println("\nResponsï¿½vel 2: " + aluno2.getResponsavel());
+		System.out.println("\nMatrï¿½cula 2: " + mat2.getMatricula());
+		System.out.println("\nCurso: " + curso1.getNomeCurso());
 		
 	}
 

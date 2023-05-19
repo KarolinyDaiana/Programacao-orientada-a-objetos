@@ -10,17 +10,17 @@ public class Aluno {
 	 * @author Karoliny Daiana Cieply
 	 */
 
-	private String nome, email, responsavel, cpf, numero, endereco;
+	private String nome, email, responsavel, cpf, telefone, endereco;
 
 	public Aluno(String nome) {
 		setNome(nome);
 	}
 	
-	public Aluno(String nome, String cpf, String endereco, String numero, String email, String responsavel) {
+	public Aluno(String nome, String cpf, String endereco, String telefone, String email, String responsavel) {
 		setNome(nome);
 		setCpf(cpf);
 		setEndereco(endereco);
-		setNumero(numero);
+		setNumero(telefone);
 		setEmail(email);
 		setResponsavel(responsavel);
 	}
@@ -30,39 +30,39 @@ public class Aluno {
 		if (pnome.length() > 0 && pnome.matches("[A-Za-z]*")) {
 			nome = pnome;
 		} else {
-			System.out.println("Nome inválido!\n");
+			System.out.println("Nome invï¿½lido!\n");
 		}
 	}
 
-	/* Função para enviar o nome */
+	/* Funï¿½ï¿½o para enviar o nome */
 	public String getNome() {
 		return this.nome;
 	}
 
 	/** Procedimento para validar o cpf */
 	public void setCpf(String cpff) {
-		if (cpff.length() == 11 && cpff.length().matches([0-9] {3})) {
+		if (cpff.length() == 14 && cpff().matches("[0-9]){3}.[0-9]{3}.[0-9]{3}-[0-9]")) {
 			cpf = cpff;
 		} else {
-			System.out.println("CPF inválido\n");
+			System.out.println("CPF invï¿½lido\n");
 		}
 	}
 
-	/** Função para enviar o cpf */
+	/** Funï¿½ï¿½o para enviar o cpf */
 	public String getCpf() {
 		return cpf;
 	}
 
-	/** Procedimento para validar o responsável */
+	/** Procedimento para validar o responsï¿½vel */
 	public void setResponsavel(String responsavell) {
 		if (responsavell.matches("[A-Za-z]*")) {
 			responsavel = responsavell;
 		} else {
-			System.out.println("Responsável inválido!\n");
+			System.out.println("Responsï¿½vel invï¿½lido!\n");
 		}
 	}
 
-	/** Função para rtornar o responsável */
+	/** Funï¿½ï¿½o para rtornar o responsï¿½vel */
 	public String getResponsavel() {
 		return responsavel;
 	}
@@ -72,26 +72,26 @@ public class Aluno {
 		if (emaill.matches("([a-z0-9.]+[a-z0-9_\\-.]*@[.a-z]*)")) {
 			email = emaill;
 		} else {
-			System.out.println("Email inválido!\n");
+			System.out.println("Email invï¿½lido!\n");
 		}
 	}
 
-	/** Função para retornar o email */
+	/** Funï¿½ï¿½o para retornar o email */
 	public String getEmail() {
 		return email;
 	}
 	
-	/** Procedimento para validar o número */
-	public void setNumero(String numeroo) {
-		if(numeroo.matches("(\\([0-9]{2}\\)[0-9]{5}[-]+[0-9]{4})")) {
-			numero = numeroo;
+	/** Procedimento para validar o telefone */
+	public void setTelefone(String telefonee) {
+		if(telefonee.matches("(\\([0-9]{2}\\)[0-9]{5}[-]+[0-9]{4})")) {
+			telefone = telefonee;
 		} else {
-			System.out.println("Número inválido!\n");
+			System.out.println("Telefone invï¿½lido!\n");
 		}
 	}
-	/** Função para retornar o número */
-	public String getNumero() {
-		return numero;
+	/** Funï¿½ï¿½o para retornar o telefone */
+	public String getTelefone() {
+		return telefone;
 	}
 	
 	/** Procedimento para validar o endereco */
@@ -99,11 +99,11 @@ public class Aluno {
 		if (enderecoo.length() > 0) {
 			endereco = enderecoo;
 		} else {
-			System.out.println("Responsável inválido!\n");
+			System.out.println("Responsï¿½vel invï¿½lido!\n");
 		}
 	}
 
-	/** Função para rtornar o endereco */
+	/** Funï¿½ï¿½o para rtornar o endereco */
 	public String getEndereco() {
 		return endereco;
 	}

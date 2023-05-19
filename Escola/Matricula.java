@@ -4,24 +4,26 @@ import Secretaria.Aluno;
 
 public class Matricula {
 	
-	public Matricula(Aluno nome, Curso curso) {
+	private String codigo;
+
+	public Matricula(Aluno aluno, Curso curso) {
 		super();
-		setNome(nome);
+		setAluno(aluno);
 		setCurso(curso);
 	}
 
-	/** Procedimento para validar a matrícula */
-	public void setMatricula(String matriculaa) {
-		if (matriculaa.matches("[0-9]*")) {
-			matricula = matriculaa;
+	/** Procedimento para validar a matrï¿½cula */
+	public void setCodigo(String codigoo) {
+		if (codioo.matches("[A-Za-z]*{1}[0-9]{5}")) {
+			codigo = codigoo;
 		} else {
-			System.out.println("Matrícula inválida\n");
+			System.out.println("Matrï¿½cula invï¿½lida\n");
 		}
 	}
 
-	/** Função para enviar a matrícula */
-	public String getMatricula() {
-		return matricula;
+	/** Funï¿½ï¿½o para enviar a matrï¿½cula */
+	public String getCodigo() {
+		return codigo;
 	}
 
 }
